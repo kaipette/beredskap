@@ -1,0 +1,177 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:weightSum="1">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/relativeLayout"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/nfs_kriseberedskap"
+            android:id="@+id/textHeading"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/nobels_fredssenter"
+            android:id="@+id/textNFS"
+            android:layout_below="@+id/textHeading"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/redd_liv"
+            android:id="@+id/textPunktReddLiv"
+            android:textStyle="bold"
+            android:textColor="#cc0000"
+            android:layout_below="@+id/textNFS"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/varsle_n_detater"
+            android:id="@+id/textPunktVarsle1"
+            android:layout_below="@+id/textPunktReddLiv"
+            android:layout_alignLeft="@+id/textPunktReddLiv"
+            android:layout_alignStart="@+id/textPunktReddLiv"
+            android:textColor="#cc0000"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textPunktVarsle1"
+            android:layout_alignRight="@+id/textNFS"
+            android:layout_alignEnd="@+id/textNFS">
+
+            <Button
+                android:id="@+id/callBrann"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ring_brannvesen"
+                tools:ignore="ButtonStyle" />
+
+
+            <Button
+                android:id="@+id/callPoliti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ring_politi" />
+
+
+            <Button
+                android:id="@+id/callLege"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ring_lege" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="@dimen/RelativeLayout_margin"
+        android:id="@+id/relativeLayout2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/varsle_beredskapsleder"
+            android:id="@+id/textPunktVarsle2"
+            android:textStyle="bold"
+            android:textColor="#cc0000"
+
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textPunktVarsle2"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/callLiv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ring_liv" />
+
+            <Button
+                android:id="@+id/callKai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ring_kai" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/first_aid_text"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="@dimen/RelativeLayout_margin"
+        android:layout_marginBottom="@dimen/RelativeLayout_margin"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView" />
+
+    <TextView
+        android:layout_width="367dp"
+        android:layout_height="wrap_content"
+        android:text="@string/hjertestarter_i_butikkdisken_og_p_loftet_ved_d_ra_til_personaltrappa"
+        android:id="@+id/textView"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_alignRight="@+id/relativeLayout2"
+        android:layout_alignEnd="@dimen/RelativeLayout_margin"
+        android:layout_marginTop="@dimen/RelativeLayout_margin"
+        android:layout_marginBottom="@dimen/RelativeLayout_margin"
+        android:layout_alignLeft="@+id/relativeLayout2"
+        android:layout_alignStart="@+id/relativeLayout2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/firstAidBtnText"
+        android:id="@+id/webViewBtn"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="RelativeLayout_margin">10dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="btn_width">110dp</dimen>
+    <string name="action_settings">Settings</string>
+    <string name="app_name">Beredskap</string>
+    <string name="firstAidBtnText">Førstehjelp</string>
+    <string name="first_aid_text">Førstehjelpsutstyr: I butikkdisken, på Alfred-kjøkken, i bøttekott utenfor verdensrommet og på loftet ved døra til personaltrappa</string>
+    <string name="hello_world">Kriseberedskap</string>
+    <string name="hjertestarter_i_butikkdisken_og_p_loftet_ved_d_ra_til_personaltrappa">Hjertestarter: I butikkdisken og på loftet ved døra til personaltrappa</string>
+    <string name="nfs_kriseberedskap">NFS Kriseberedskap</string>
+    <string name="nobels_fredssenter">Nobels Fredssenter</string>
+    <string name="redd_liv">• REDD LIV</string>
+    <string name="ring_brannvesen">Brann</string>
+    <string name="ring_kai">Kai</string>
+    <string name="ring_lege">Lege</string>
+    <string name="ring_liv">Liv</string>
+    <string name="ring_politi">Politi</string>
+    <string name="title_activity_fragment_main">FragmentMainActivity</string>
+    <string name="title_activity_second">Førstehjelp</string>
+    <string name="varsle_beredskapsleder">• VARSLE BEREDSKAPSLEDER</string>
+    <string name="varsle_n_detater">• VARSLE NØDETATER</string>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+</resources>
